@@ -42,7 +42,7 @@ public class ProductController {
 		return ResponseEntity.status(HttpStatus.OK).body(productsList);
 	}
 
-    @GetMapping("/products/${id}")
+    @GetMapping("/products/{id}")
     public ResponseEntity<Object> getOneProduct(
         @PathVariable(value="id") 
         UUID id
